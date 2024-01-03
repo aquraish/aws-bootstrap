@@ -11,7 +11,7 @@ Parameters:
     Description: 'The S3 bucket for CodePipeline artifacts.'
   GitHubOwner:
     Type: String
-    Description: 'The username of the source GitHub repo.'
+    Description: 'The username of the source GitHub repo updated.'
   GitHubRepo:
     Type: String
     Description: 'The source GitHub repo name (without the username).'
