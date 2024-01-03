@@ -21,7 +21,7 @@ echo "\n\n=========== Deploying setup.yml ==========="
 aws cloudformation deploy \
   --region $REGION \
   --profile $CLI_PROFILE \
-  --stack-name $STACK_NAME-setup \
+  --stack-name $STACK_NAME-setup2 \
   --template-file setup.yml \
   --no-fail-on-empty-changeset \
   --capabilities CAPABILITY_NAMED_IAM \
@@ -32,7 +32,7 @@ echo "\n\n=========== Deploying main.yml ==========="
 aws cloudformation deploy \
   --region $REGION \
   --profile $CLI_PROFILE \
-  --stack-name $STACK_NAME \
+  --stack-name $STACK_NAME-2 \
   --template-file main.yml \
   --no-fail-on-empty-changeset \
   --capabilities CAPABILITY_NAMED_IAM \
